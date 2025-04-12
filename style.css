@@ -25,7 +25,9 @@
     
     
 }
-
+.nav-title{
+    font-weight: 800; font-size: 24px;
+}
 .nav-btn{
     background-color: white;
     color: rgba(58, 58, 58, 1);
@@ -36,8 +38,9 @@
     margin-left: 10px;
     font-weight: 600;
 }
-.nav-hamburger{
+.nav-hamburger, .nav-cart{
     display: none;
+    /* text-align: right; */
 }
 .prebook-btn{
     background-color: rgba(224, 44, 109, 0.87);
@@ -48,6 +51,12 @@
     border-radius: 40px;
     font-size: 16px;
 
+}
+.start{
+    font-size: 45px; font-weight: bold; margin-bottom: 10px;
+}
+.lorem{
+    font-weight: 600; font-size: 16px; margin-bottom: 16px;
 }
 
 .camera-section{
@@ -150,7 +159,7 @@ h1 {
 
 }
 .banner-child1{
-    width: 50%;
+    width: 40%;
     padding: 10px;
     /* border: 2px solid red; */
      /* position: relative; */
@@ -160,7 +169,7 @@ h1 {
     /* border: 2px solid red; */
     /* position: relative; */
 }
-.banner-child img{
+.banner-child1 img{
     width: 100%;
     border-radius: 10px;
 }
@@ -178,6 +187,12 @@ h1 {
     margin-bottom: 100px;
     
 }
+.feature{
+    margin-bottom: 10px; font-weight: bold; font-size: 35px;
+}
+.amet{
+    margin-bottom: 16px; font-weight: bold; font-size: 16px; color: rgba(108, 108, 108, 1);
+}
 
 .footer-section{
     background-color: rgb(20, 20, 60);
@@ -186,5 +201,112 @@ h1 {
     display: flex;
     justify-content: center;
     text-align: center;
+    
+}
+
+/* responsive for mobile */
+
+@media screen and (max-width: 576px) {
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .navbar{
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+          
+    }
+    .nav-title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 16px;
+      }
+    
+      .nav-hamburger,
+      .nav-cart {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+      }
+      .nav-hamburger {
+        left: 10px;
+      }
+    
+      .nav-cart {
+        right: 10px;
+      }
+
+    .nav-container{
+        display: none;
+    }
+   
+
+    .start{
+        font-size: 28px;
+    }
+    .lorem{
+        font-size: 14px;
+    }
+    .camera-section{
+        flex-direction: column-reverse;
+        background-image:  url('images/Circle\ design.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .child{
+        margin-bottom: 80px;
+    }
+    
+    .collection{
+        font-size: 24px;
+        margin-top: 0;
+        
+    
+    }
+    .popular-main{
+        grid-template-columns: repeat(1,1fr);
+        
+    } 
+    .banner-main{
+        flex-direction: column;
+       }
+    .sponsor-company{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        border-top: none;
+        border-bottom: none;
+        gap: 20px; /* or whatever spacing you want */
+        padding: 0;
+    }
+    .banner-main{
+        flex-direction: column-reverse;
+        text-align: center;
+        
+    }  
+    .banner-child1{
+        width: 100%;
+        padding: 0;
+
+    } 
+    .banner-child2{
+        width: 100%;
+        margin-bottom: 20px;
+
+    } 
+    .feature{
+        font-size: 28px;
+    }
+    .footer-section{
+        padding: 50px auto;
+     
+        
+    }
+       
     
 }
