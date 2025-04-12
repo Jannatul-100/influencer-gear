@@ -40,7 +40,7 @@
 }
 .nav-hamburger, .nav-cart{
     display: none;
-    /* text-align: right; */
+    
 }
 .prebook-btn{
     background-color: rgba(224, 44, 109, 0.87);
@@ -281,7 +281,7 @@ h1 {
         grid-template-columns: repeat(3,1fr);
         border-top: none;
         border-bottom: none;
-        gap: 20px; /* or whatever spacing you want */
+        gap: 20px; 
         padding: 0;
     }
     .banner-main{
